@@ -1,11 +1,11 @@
 class Triangle
-    attr_accessor :length1, :length2, :length3
+    attr_accessor :l1, :l2, :l3
     def initialize(attributes)
       attributes.each {|key, value| self.send(("#{key}="), value)}
     end
 
     def kind
-      if ( length1 <= 0 || length2 <= 0 || length2 <= 0 ) ||
+      if ( l1 <= 0 || l2 <= 0 || l3 <= 0 ) || 
         raise TriangleError
     end
 
