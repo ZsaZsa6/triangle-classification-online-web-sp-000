@@ -5,7 +5,7 @@ class Triangle
     end
 
     def kind
-      
+      if ( length1 <= 0 || length2 <= 0 || length2 <= 0 )
     end
 
   class TriangleError < StandardError
