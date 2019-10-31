@@ -5,12 +5,13 @@ class Triangle
     end
 
     def kind
-      if ( length1 <= 0 || length2 <= 0 || length2 <= 0 )
+      if ( length1 <= 0 || length2 <= 0 || length2 <= 0 ) ||
+        raise TriangleError
     end
 
   class TriangleError < StandardError
     def message
-    puts "The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
+    puts "All sides of a triangle must be more than zero. The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
     end
   end
 end
