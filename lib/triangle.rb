@@ -6,5 +6,6 @@ class Triangle
 
   def kind
 
+    
     puts The sum of the lengths of any two sides of a triangle always exceeds the length of the third side."
 end
